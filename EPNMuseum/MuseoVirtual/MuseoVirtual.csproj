@@ -157,8 +157,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Content\App_Start\BundleConfig.cs" />
+    <Compile Include="Content\App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AcercaDeController.cs" />
     <Compile Include="Controllers\MapController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
@@ -188,6 +189,7 @@
     <Content Include="Views\Section\Content.cshtml" />
     <Content Include="Views\Shared\_LayoutSection.cshtml" />
     <Content Include="Views\Person\Index.cshtml" />
+    <Content Include="Views\AcercaDe\Mostrar_AcercaDe.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="jquery.swfobject.js" type="text/javascript"></script>
     <title>Museo Virtual EPN</title>
 
 </head>
@@ -30,7 +32,7 @@
                  id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Acerca del Museo</a>
+                        <a class="nav-link" href="/AcercaDe/Mostrar_AcercaDe">Acerca del Museo</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="/Map/Show_Map">Contactos</a>
@@ -95,9 +97,27 @@
                 <div class="card my-4">
                     <h5 class="card-header">Mapa del Museo</h5>
                     <div class="card-body">
-                        <object width="400" height="350">
-                            <embed src="~/myFlash/ejemploMapa.swf" type="application/x-shockwave-flash" width="500" height="600"></embed>
-                        </object>
+                        @*<object width="400" height="350">*@
+                        @*<embed src="~/myFlash/ejemploMapa.swf" type="application/x-shockwave-flash" width="500" height="600"></embed>*@
+                        <div id="mapaId">
+                            Flash Mapa
+
+                            <script type="text/javascript">
+                                $(document).ready(
+                                    function () {
+                                        $('#mapaId').flash({
+                                            swf: '~/myFlash/ejemploMapa.swf',
+                                            width: 400,
+                                            height: 320,
+                                            flashvars: { name1: 'jQuery', name2: 'SWFObject' },
+                                            params: { wmode: 'transparent' }
+                                        });
+                                    });
+                            </script>
+                        </div>
+                      
+
+                        @*</object>*@
                     </div>
 
                 </div>
@@ -106,12 +126,12 @@
             <div class="col-sm-3">
                 <!-- Search Widget -->
                 <div class="card my-4">
-                    <h5 class="card-header">Search</h5>
+                    <h5 class="card-header">Buscar</h5>
                     <div class="card-body">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for...">
+                            <input type="text" class="form-control" placeholder="Buscar">
                             <span class="input-group-btn">
-                                <button class="btn btn-secondary" type="button">Go!</button>
+                                <button class="btn btn-secondary" type="button">Ir!</button>
                             </span>
                         </div>
                     </div>
@@ -127,4 +147,8 @@
         </div>
     </footer>
 </body>
+
+
+
 </html>
+
