@@ -97,27 +97,14 @@
                 <div class="card my-4">
                     <h5 class="card-header">Mapa del Museo</h5>
                     <div class="card-body">
-                        @*<object width="400" height="350">*@
-                        @*<embed src="~/myFlash/ejemploMapa.swf" type="application/x-shockwave-flash" width="500" height="600"></embed>*@
-                        <div id="mapaId">
-                            Flash Mapa
-
-                            <script type="text/javascript">
-                                $(document).ready(
-                                    function () {
-                                        $('#mapaId').flash({
-                                            swf: '~/myFlash/ejemploMapa.swf',
-                                            width: 400,
-                                            height: 320,
-                                            flashvars: { name1: 'jQuery', name2: 'SWFObject' },
-                                            params: { wmode: 'transparent' }
-                                        });
-                                    });
-                            </script>
+                        <object width="400" height="350">
+                        <embed src="~/myFlash/ejemploMapa.swf" type="application/x-shockwave-flash" width="500" height="600"></embed>
+                       
+                    
                         </div>
                       
 
-                        @*</object>*@
+                        </object>
                     </div>
 
                 </div>
