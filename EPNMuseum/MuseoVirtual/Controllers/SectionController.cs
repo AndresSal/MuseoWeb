@@ -13,5 +13,11 @@ namespace MuseoVirtual.Controllers
         {
             return View();
         }
+
+        public ActionResult Mezosoica()
+        {
+            return View();
+
+        }
     }
 }
