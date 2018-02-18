@@ -125,6 +125,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\blog-home.css" />
+    <Content Include="imagenes\100x50.png" />
+    <Content Include="imagenes\Sable1.jpg" />
+    <Content Include="imagenes\Sable2.jpg" />
+    <Content Include="imagenes\mammoth.png" />
+    <Content Include="imagenes\mesozoico.jpg" />
     <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.css" />
